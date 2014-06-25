@@ -13,7 +13,7 @@ module.exports = function(grunt) {
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
   // TODO: Uninstall unused option?
-  grunt.registerTask('auto_install', 'Auto install grunt dependencies from grunt.loadNpmTasks as you program so that you can be even lazier.', function() {
+  grunt.registerTask('auto_depend', 'Auto install grunt dependencies from grunt.loadNpmTasks as you program so that you can be even lazier.', function() {
     var done = this.async();
 
     var getTaskNames = function(content) {
