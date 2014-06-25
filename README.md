@@ -26,21 +26,6 @@ In your project's Gruntfile, you can use the task named `auto_depend` anywhere. 
 grunt.task.run('auto_depend'); // Acquire money and fame.
 ```
 
-
-### Options
-
-#### options.separator
-Type: `String`
-Default value: `',  '`
-
-A string value that is used to do something with whatever.
-
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
-
 ### Usage Examples
 
 A simple task is registered by the name of `auto_depend`, which when invoke will
