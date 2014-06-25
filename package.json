@@ -1,0 +1,42 @@
+{
+  "name": "grunt-auto-install",
+  "description": "Auto install grunt dependencies from grunt.loadNpmTasks as you program so that you can be even lazier.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/norcalli/grunt-auto-install",
+  "author": {
+    "name": "Ashkan Kiani",
+    "email": "ashkan.k.kiani@gmail.com",
+    "url": "norcalli.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/norcalli/grunt-auto-install.git"
+  },
+  "bugs": {
+    "url": "https://github.com/norcalli/grunt-auto-install/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/norcalli/grunt-auto-install/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4"
+  },
+  "keywords": [
+    "auto",
+    "install",
+    "dependencies",
+    "gruntplugin"
+  ]
+}
