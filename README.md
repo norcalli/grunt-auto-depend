@@ -1,4 +1,4 @@
-# grunt-auto-install
+# grunt-auto-depend
 
 > Auto install grunt dependencies from grunt.loadNpmTasks as you program so that you can be even lazier.
 
@@ -8,32 +8,22 @@ This plugin requires Grunt `~0.4`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-auto-install --save-dev
+npm install grunt-auto-depend --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-auto-install');
+grunt.loadNpmTasks('grunt-auto-depend');
 ```
 
 ## The "auto_install" task
 
 ### Overview
-In your project's Gruntfile, add a section named `auto_install` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, you can use the task named `auto_depend` anywhere. I use it in my `watch` task when my `Gruntfile` is changed.
 
-```js
-grunt.initConfig({
-  auto_install: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
-});
-```
+grunt.task.run('auto_depend');
+
 
 ### Options
 
@@ -51,35 +41,8 @@ A string value that is used to do something else with whatever else.
 
 ### Usage Examples
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  auto_install: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  auto_install: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
+A simple task is registered by the name of `auto_depend`, which when invoke will
+ automatically find your `Gruntfile` and install everything _that is not commented out_.
 ```
 
 ## Contributing

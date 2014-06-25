@@ -10,5 +10,5 @@
 
 module.exports = function(grunt) {
   grunt.loadTasks('tasks');
-  grunt.registerTask('default', ['auto_install']);
+  grunt.registerTask('default', ['auto_depend']);
 };
