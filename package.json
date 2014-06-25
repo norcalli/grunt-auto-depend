@@ -1,7 +1,7 @@
 {
   "name": "grunt-auto-depend",
   "description": "Auto install grunt dependencies from grunt.loadNpmTasks as you program so that you can be even lazier.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/norcalli/grunt-auto-install",
   "author": {
     "name": "Ashkan Kiani",
